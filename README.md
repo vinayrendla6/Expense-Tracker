@@ -24,7 +24,7 @@ To get a local copy of this project up and running, follow these simple steps:
 
 Clone the repository:
 
-git clone https://github.com/your-username/Expense-Tracker-MERN-STACK-Project.git
+git clone [https://github.com/vinayrendla6/Expense-Tracker.git](https://github.com/vinayrendla6/Expense-Tracker.git)
 Install dependencies for the backend:
 
 cd Expense-Tracker-MERN-STACK-Project
