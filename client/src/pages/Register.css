@@ -1,0 +1,142 @@
+/* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7ff;
+}
+
+/* Main container */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card (form + image) */
+.registration-card {
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 950px;
+  max-width: 95%;
+  overflow: hidden;
+}
+
+/* Left form */
+.registration-form-section {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.registration-form-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.registration-form-section .ant-form-item-label > label {
+  font-weight: 500;
+  color: #444;
+}
+
+/* Inputs */
+.ant-input,
+.ant-input-affix-wrapper {
+  border-radius: 8px !important;
+  height: 42px !important;
+  border: 1px solid #ddd !important;
+  background: #f8f8fb !important;
+  box-shadow: none !important;
+  padding: 0 12px !important;
+  display: flex;
+  align-items: center;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100% !important;
+}
+
+.ant-input-affix-wrapper input.ant-input {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100% !important;
+}
+
+/* Checkbox */
+.ant-checkbox-wrapper {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button */
+.register-button {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px !important;
+  background-color: #4f46e5 !important;
+  border-color: #4f46e5 !important;
+}
+
+.register-button:hover {
+  background-color: #4338ca !important;
+  border-color: #4338ca !important;
+}
+
+/* Bottom link */
+.login-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-link a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Right image */
+.registration-image-section {
+  flex: 1;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .registration-card {
+    flex-direction: column-reverse;
+  }
+
+  .registration-image-section {
+    display: none;
+  }
+
+  .registration-form-section {
+    padding: 30px 20px;
+  }
+}

@@ -1,0 +1,164 @@
+/* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7ff;
+}
+
+/* Main container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card (image + form) */
+.login-card {
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 900px;
+  max-width: 95%;
+  overflow: hidden;
+}
+
+/* Left image */
+.login-image-section {
+  flex: 1;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right form */
+.login-form-section {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-form-section .subtitle {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* Inputs (Email + Password unified style) */
+.ant-input,
+.ant-input-affix-wrapper {
+  border-radius: 8px !important;
+  height: 42px !important;
+  border: 1px solid #ddd !important;
+  background: #f8f8fb !important;
+  box-shadow: none !important;
+  padding: 0 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Make password inner input transparent so wrapper fills fully */
+.ant-input-affix-wrapper input.ant-input {
+  flex: 1 1 auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Eye icon alignment */
+.ant-input-suffix {
+  margin-left: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  color: #888;
+}
+
+/* Focus state */
+.ant-input:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #4f46e5 !important;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2) !important;
+}
+
+/* Error state */
+.ant-form-item-has-error .ant-input,
+.ant-form-item-has-error .ant-input-affix-wrapper {
+  border-color: #ff4d4f !important;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2) !important;
+}
+
+/* Button */
+.login-button {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px !important;
+  background-color: #4f46e5 !important;
+  border-color: #4f46e5 !important;
+}
+
+.login-button:hover {
+  background-color: #4338ca !important;
+  border-color: #4338ca !important;
+}
+
+/* Bottom link */
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.signup-link a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+  }
+
+  .login-image-section {
+    display: none;
+  }
+
+  .login-form-section {
+    padding: 30px 20px;
+  }
+}
